@@ -1,0 +1,302 @@
+:root {
+  --mycolor: #f44336;
+}
+body {
+  background-color: rgb(241, 241, 241);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-image: url(london2.jpg);
+  height: 100vh;
+}
+.allimgs {
+  display: grid;
+  grid-template-columns: 3fr 253px 253px;
+  grid-template-rows: 189px 189px;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+.allimgs img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.allimgs div {
+  position: relative;
+}
+.allimgs span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px 10px;
+}
+.large span {
+  background-color: #000;
+}
+.large {
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 100%;
+}
+
+.large img{
+  width: 100%;
+  height: 100%;
+}
+
+.card1,
+.card2 {
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+  margin: 5px;
+  float: left;
+  background-color: #fff;
+  padding: 8px;
+}
+.formsec2 {
+  padding: 16px;
+}
+#logo:hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--mycolor);
+}
+.logoCon {
+  justify-content: space-between;
+  display: flex;
+}
+.fa-magnifying-glass:hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--mycolor);
+}
+.fa-magnifying-glass {
+  height: 28px;
+  padding: 8px 16px;
+  justify-self: center;
+  align-self: center;
+  width: 120px;
+  color: gray;
+}
+#logo {
+  height: 28px;
+  padding: 8px 16px;
+  width: 120px;
+  color: var(--mycolor);
+}
+#sum {
+  border: none;
+  background-color: rgb(100, 100, 100);
+  height: 40px;
+  width: 200px;
+  padding: 8px 16px;
+  color: white;
+}
+#sum:hover {
+  color: #000;
+  background-color: rgb(198, 198, 198);
+}
+.from {
+  width: 45%;
+  padding: 8px;
+  height: 20px;
+}
+.to {
+  padding: 8px;
+  height: 20px;
+  width: 45%;
+}
+.buttoncard1,
+.buttoncard2 {
+  width: 20%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+.sec1 {
+  width: 100%;
+}
+.buttoncard1:hover,
+.buttoncard2:hover {
+  color: white;
+  background-color: black;
+}
+.te4 {
+  padding: 12px 24px;
+  height: 40px;
+  width: 175px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.te1,
+.te2,
+.te3 {
+  height: 25px;
+  margin: 1px 0;
+  padding: 16px 8px;
+  width: 98%;
+}
+
+.navcar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  color: white;
+}
+.fa-brands:hover {
+  opacity: 0.5;
+}
+.last {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.butt1 {
+  width: 77px;
+  color: white;
+  border: none;
+  background-color: var(--mycolor);
+}
+#email {
+  display: inline-block;
+  height: 25px;
+  width: 100%;
+}
+#Sub:hover {
+  color: black;
+  background-color: #fff;
+}
+#Sub {
+  color: white;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--mycolor);
+  height: 30px;
+  width: 85px;
+}
+.form2:hover {
+  background-color: black;
+}
+.lab {
+  padding-right: 45%;
+}
+.form2 {
+  /* display: flex; */
+  height: 228px;
+  width: 100%;
+  margin: 16px 0;
+  padding: 16px;
+  color: white;
+  width: 100%;
+  background-color: grey;
+}
+.butt2,
+.butt3 {
+  width: 77px;
+  border: none;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+}
+
+.butt1:hover {
+  background-color: grey;
+  color: black;
+}
+.butt2:hover {
+  background-color: grey;
+  color: black;
+}
+.butt3:hover {
+  background-color: grey;
+  color: black;
+}
+.forr {
+  width: 88%;
+  background-color: #fff;
+}
+.all {
+  margin: 0px 100px;
+}
+@media (max-width: 1024px) {
+  .all {
+    margin: 0 50px;
+  }
+  .allimgs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .large {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .card1,
+  .card2 {
+    width: 100%;
+    margin: 10px 0;
+    float: none;
+  }
+}
+
+@media (max-width: 768px) {
+.form2{
+  width: 95%;
+}
+  .from,
+  .to {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .sec1{
+    display: none;
+  }
+  .butt1,
+  .butt2,
+  .butt3 {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .all {
+    margin: 0 20px;
+  }
+  .allimgs {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo {
+    width: auto;
+    padding: 8px;
+  }
+  .fa-magnifying-glass {
+    padding: 8px;
+  }
+  #sum {
+    width: 100%;
+    padding: 8px;
+  }
+  .te1,
+  .te2,
+  .te3 {
+    padding: 8px;
+  }
+  .te4 {
+    width: 100%;
+  }
+  #Sub {
+    width: 100%;
+  }
+}
